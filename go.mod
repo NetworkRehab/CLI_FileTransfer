@@ -6,7 +6,7 @@ require (
 	github.com/Azure/azure-storage-blob-go v0.15.0 // New dependency
 	github.com/aws/aws-sdk-go v1.55.5 // New dependency
 	github.com/charmbracelet/bubbletea v1.1.0
-	github.com/mattn/go-sqlite3 v1.14.17
+	github.com/mattn/go-sqlite3 v1.14.24
 	github.com/pkg/sftp v1.13.7
 	github.com/spf13/viper v1.15.0
 	golang.org/x/crypto v0.21.0

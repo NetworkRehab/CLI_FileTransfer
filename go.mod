@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/Azure/azure-storage-blob-go v0.15.0 // New dependency
-	github.com/aws/aws-sdk-go v1.44.2 // New dependency
+	github.com/aws/aws-sdk-go v1.55.5 // New dependency
 	github.com/charmbracelet/bubbletea v1.1.0
 	github.com/mattn/go-sqlite3 v1.14.17
 	github.com/pkg/sftp v1.13.1

@@ -16,6 +16,7 @@ import (
     "github.com/pkg/sftp"
     "github.com/spf13/viper"
     "golang.org/x/crypto/ssh"
+    "io/ioutil"
 )
 
 // transferFile transfers a file using the specified protocol.
@@ -92,13 +93,25 @@ func transferCIFS(source, destination string) error {
 
 // transferSFTP uploads a file via SFTP.
 func transferSFTP(source, destination string) error {
+    // Read the allowed host key from a file
+    publicKeyBytes, err := ioutil.ReadFile("allowed_hostkey.pub")
+    if err != nil {
+        return fmt.Errorf("failed to read allowed host key: %v", err)
+    }
+
+    // Parse the allowed host key
+    publicKey, err := ssh.ParsePublicKey(publicKeyBytes)
+    if err != nil {
+        return fmt.Errorf("failed to parse allowed host key: %v", err)
+    }
+
     // SSH client configuration
     config := &ssh.ClientConfig{
         User: "username",
         Auth: []ssh.AuthMethod{
             ssh.Password("password"),
         },
-        HostKeyCallback: ssh.InsecureIgnoreHostKey(),
+        HostKeyCallback: ssh.FixedHostKey(publicKey),
     }
 
     // Connect to the SSH server

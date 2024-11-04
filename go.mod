@@ -7,7 +7,7 @@ require (
 	github.com/aws/aws-sdk-go v1.55.5 // New dependency
 	github.com/charmbracelet/bubbletea v1.1.0
 	github.com/mattn/go-sqlite3 v1.14.17
-	github.com/pkg/sftp v1.13.1
+	github.com/pkg/sftp v1.13.7
 	github.com/spf13/viper v1.15.0
 	golang.org/x/crypto v0.21.0
 )
@@ -38,7 +38,6 @@ require (
 	github.com/muesli/cancelreader v0.2.2 // indirect
 	github.com/muesli/termenv v0.15.2 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.6 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/spf13/afero v1.9.3 // indirect
 	github.com/spf13/cast v1.5.0 // indirect

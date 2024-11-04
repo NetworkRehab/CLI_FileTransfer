@@ -1,0 +1,21 @@
+sftp:
+  username: "your_username"
+  password: "your_password"
+  host: "sftp.example.com"
+  port: 22
+
+azureblob:
+  account_name: "your_account_name"
+  account_key: "your_account_key"
+  container_name: "your_container"
+
+aws:
+  bucket: "your-bucket-name"
+  region: "us-west-2"
+  access_key: "your-access-key"
+  secret_key: "your-secret-key"
+
+cifs:
+  mount_point: "/mnt/share"
+  username: "domain\\user"
+  password: "your_password"

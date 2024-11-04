@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/Azure/azure-storage-blob-go v0.15.0 // New dependency
 	github.com/aws/aws-sdk-go v1.55.5 // New dependency
-	github.com/charmbracelet/bubbletea v1.1.0
+	github.com/charmbracelet/bubbletea v1.1.2
 	github.com/mattn/go-sqlite3 v1.14.24
 	github.com/pkg/sftp v1.13.7
 	github.com/spf13/viper v1.15.0
@@ -19,7 +19,7 @@ require (
 	github.com/atotto/clipboard v0.1.4 // indirect
 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
 	github.com/charmbracelet/lipgloss v0.13.0 // indirect
-	github.com/charmbracelet/x/ansi v0.2.3 // indirect
+	github.com/charmbracelet/x/ansi v0.4.0 // indirect
 	github.com/charmbracelet/x/term v0.2.0 // indirect
 	github.com/erikgeiser/coninput v0.0.0-20211004153227-1c3628e74d0f // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
